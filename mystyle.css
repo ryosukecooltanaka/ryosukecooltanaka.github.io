@@ -1,10 +1,15 @@
 body {
   font-family: 'Archivo';
   background-color: #2EC4B6;
-  margin: 20px;
+  margin: 0;
+  color: #FFF;
 }
 h1 {
   font-size: 72px;
   font-weight: bold;
   color: #FFBF69;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
 }
