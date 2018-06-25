@@ -1,15 +1,91 @@
+/* structure */
 body {
-  font-family: 'Archivo';
-  background-color: #2EC4B6;
+  background-color: #FDFFF7;
   margin: 0;
-  color: #FFF;
-}
-h1 {
-  font-size: 72px;
-  font-weight: bold;
-  color: #FFBF69;
+  color: #50514F;
+  font-family: 'Rubik', sans-serif;
 }
 .container{
   width: 80%;
+  min-height: 70%;
+  margin: 15px auto 50px auto;
+}
+.footer{
+  width: 80%;
+  height: 50px;
   margin: 0 auto;
+}
+
+
+/* contents */
+h1 {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 64px;
+  color: #50514F;
+  margin-bottom: 12px;
+}
+h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  color: #50514F;
+}
+h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #50514F;
+}
+p {
+  width: 75%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+p.bpexp{
+  font-size: 14px;
+  padding-left:14px;
+}
+a:link {color: #50514F}
+a:hover {color: #59FFA0}
+a:visited {color: #B4ADEA}
+a.mainlink {text-decoration: none}
+.mainlink:hover {color: #59FFA0}
+
+ul.publist {
+  list-style: none;
+  font-size: 14px;
+  padding-left: 0;
+}
+li.pub{
+  margin: 4px;
+}
+
+/* SNS icons */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:visited{
+  color: white;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
