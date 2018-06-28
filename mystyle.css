@@ -50,8 +50,10 @@ p.bpexp{
 a:link {color: #50514F}
 a:hover {color: #59FFA0}
 a:visited {color: #B4ADEA}
-a.mainlink {text-decoration: none}
-.mainlink:hover {color: #59FFA0}
+a.mainlink {text-decoration: none; line-height: 32px}
+.mainlink:hover {color: #59FFA0; line-height: 32px}
+a.blojlink {text-decoration: none; line-height: 18px}
+.blojlink:hover {color: #59FFA0; line-height: 18px}
 
 ul.publist {
   list-style: none;
