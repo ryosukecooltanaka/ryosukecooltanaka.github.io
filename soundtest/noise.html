@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Noise Generator</title>
+  <!-- main css -->
+  <link rel="stylesheet" type="text/css" href="../mystyle.css">
+  <!-- webfonts -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900" rel="stylesheet">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body onload='init()'>
+<div class="container">
+<h1>Noise generator</h1>
+<button onclick="startPlaying()">Play</button>
+<button onclick="stopPlaying()">Stop</button><br/>
+<h2>Correlation</h2>
+<input type="range" min="0" max="1" value="0.5" step="0.01" id="corrRange" oninput="updateCorr()">
+<h2>Gain</h2>
+<input type="range" min="0" max="1" value="0.5" step="0.01" id="gainRange" oninput="updateGain()">
+</div>
+<script>
+// Define global variables
+var myRepeat;
+var lastSample = 0;
+var correlation = 0.5;
+var isplaying = 0;
+var gn;
+// initialize audioxontext upon loading
+function init(){
+  audioctx = new AudioContext();
+  gn = audioctx.createGain();
+  gn.gain.value = document.getElementById("gainRange").value;
+}
+
+function startPlaying(){
+  if (!isplaying){
+    myRepeat = setInterval(playNoise,1000);
+    isPlaying = 1;
+  }
+}
+
+function playNoise(){
+  // create a 1 second long monoaural buffer
+  let frameCount = audioctx.sampleRate * 1.0;
+  let myArrayBuffer = audioctx.createBuffer(1,frameCount,audioctx.sampleRate);
+  let buffer = myArrayBuffer.getChannelData(0);
+  // fill the buffer
+  buffer[0] = lastSample;
+  for (let i=1; i<frameCount; i++){
+    buffer[i] = (Math.random() * 2 - 1)*correlation + (buffer[i-1])*(1-correlation);
+  }
+  lastSample = buffer[frameCount-1]; // avoid discontinuity
+
+  // create a audioNode to actually play what I put in the buffer
+  let src = audioctx.createBufferSource();
+  src.buffer = myArrayBuffer;
+  src.connect(gn);
+  gn.connect(audioctx.destination)
+  src.start();
+}
+
+function stopPlaying(){
+  clearInterval(myRepeat);
+}
+
+function updateCorr(){
+  correlation = document.getElementById("corrRange").value;
+  document.getElementById("corrRange").value = correlation;
+}
+
+function updateGain(){
+  gn.gain.value = document.getElementById("gainRange").value;
+  document.getElementById("gainRange").value = gn.gain.value;
+}
+
+
+</script>
+</body>
+</html>

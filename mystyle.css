@@ -54,6 +54,9 @@ a.mainlink {text-decoration: none; line-height: 32px}
 .mainlink:hover {color: #59FFA0; line-height: 32px}
 a.blojlink {text-decoration: none; line-height: 18px}
 .blojlink:hover {color: #59FFA0; line-height: 18px}
+.hiddenlink {color: #FDFFF7; line-height: 32px}
+.hiddenlink:visited {color: #FDFFF7; line-height: 32px}
+.hiddenlink:hover {color: #0DFFF7; line-height: 32px}
 
 ul.publist {
   list-style: none;
