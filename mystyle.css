@@ -1,6 +1,6 @@
 /* structure */
 body {
-  background-color: #FDFFF7;
+  background-color: #F7FFF7;
   margin: 0;
   color: #50514F;
   font-family: 'Rubik', sans-serif;
@@ -42,6 +42,7 @@ p {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  text-align: justify;
 }
 p.bpexp{
   font-size: 14px;
@@ -49,7 +50,7 @@ p.bpexp{
 }
 a:link {color: #50514F}
 a:hover {color: #59FFA0}
-a:visited {color: #B4ADEA}
+a:visited {color: #90A0D0}
 a.mainlink {text-decoration: none; line-height: 32px}
 .mainlink:hover {color: #59FFA0; line-height: 32px}
 a.blojlink {text-decoration: none; line-height: 18px}
@@ -62,9 +63,19 @@ ul.publist {
   list-style: none;
   font-size: 14px;
   padding-left: 0;
+  max-width: 700px;
+  box-sizing: border-box;
 }
 li.pub{
-  margin: 4px;
+  margin-bottom: 12px;
+  margin-left: 4px;
+}
+
+img.portrait {
+  box-sizing:border-box;
+  float: left;
+  margin-right: 16px;
+  width: 160px;
 }
 
 /* SNS icons */
