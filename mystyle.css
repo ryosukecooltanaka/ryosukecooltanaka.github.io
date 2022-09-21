@@ -86,7 +86,6 @@ li.pubcomm{
 
 img.portrait {
   box-sizing:border-box;
-  float: center;
   margin-right: 16px;
   width: 160px;
 }
@@ -102,4 +101,21 @@ img.portrait {
   position: relative;
   width: 60%;
   float: left;
+}
+
+/** For smartphones **/
+@media screen and (max-width: 480px){
+  /** justified texts in narrow columns are annoying **/
+  p {
+    text-align: left;
+  }
+  .container{
+    width: 90%;
+  }
+  #about-sidebar{
+    width: 100%;
+  }
+  #about-main {
+    width: 100%;
+  }
 }
