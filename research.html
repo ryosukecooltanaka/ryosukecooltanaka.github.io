@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- favicon -->
   <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
@@ -168,26 +169,6 @@
   </footer>
 
   <!-- Script to collapse paper comments -->
-  <script type="text/javascript">
-  // Get the list of all the "pub" elements
-  var coll = document.getElementsByClassName("pub");
-  var ii;
-  // Loop through the all papers
-  for (ii=0; ii<coll.length; ii++){
-    // Add on-click functions to each paper
-    coll[ii].addEventListener("click", function(){
-      // On click, enable or disable "active" class (in CSS)
-      this.classList.toggle("active")
-      // Get the next element (which should be <li> containing the comment to the paper)
-      var thisComment = this.nextElementSibling;
-      if (thisComment.style.maxHeight){ //  if the max-height is not null
-        thisComment.style.maxHeight = null;
-      } else {
-        thisComment.style.maxHeight = thisComment.scrollHeight + "px";
-      }
-    });
-  }
-
-  </script>
+  <script type="text/javascript" src="collapse-pub-comm.js"></script>
 </body>
 </html>
