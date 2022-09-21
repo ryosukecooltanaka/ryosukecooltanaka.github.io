@@ -64,7 +64,7 @@ a.blojlink {text-decoration: none; line-height: 18px}
 .hiddenlink:hover {color: #0E2E56; line-height: 32px}
 
 /* for research page */
-ul {
+ul.external {
   list-style: none;
 }
 
