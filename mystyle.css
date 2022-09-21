@@ -1,6 +1,7 @@
 /* structure */
 body {
-  background-color: #FCFCFC;
+  background: #F4F4F4 url("images/brain_pattern.png") fixed no-repeat;
+  background-position: 80% 80%;
   margin: 0;
   color: #0E2E56;
   font-family: 'Rubik', sans-serif;
