@@ -46,6 +46,7 @@ p {
   font-size: 18px;
   line-height: 24px;
   text-align: justify;
+  text-justify: inter-word;
 }
 p.bpexp{
   font-size: 14px;
@@ -79,6 +80,7 @@ li.pubcomm{
   margin-left: 24px;
   margin-bottom: 12px;
   text-align: justify;
+  text-justify: inter-word;
   color: #666ACE
 }
 
@@ -105,15 +107,18 @@ img.portrait {
 
 /** For smartphones **/
 @media screen and (max-width: 959px){
-  /** justified texts in narrow columns are annoying **/
-  p {
-    text-align: left;
+  img.portrait{
+    width: 75%;
+    margin-left: 50%;
+    margin-right: 50%;
   }
   .container{
-    width: 90%;
+    width: 85%;
   }
   #about-sidebar{
     width: 100%;
+    text-align: center;
+    list-style: none;
   }
   #about-main {
     width: 100%;
