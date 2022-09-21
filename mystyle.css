@@ -118,6 +118,7 @@ img.portrait {
   }
   #external-links{
     list-style-type: none;
+    color: #FF0000;
   }
   #about-sidebar{
     width: 100%;
