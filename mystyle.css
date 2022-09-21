@@ -64,6 +64,9 @@ a.blojlink {text-decoration: none; line-height: 18px}
 .hiddenlink:hover {color: #0E2E56; line-height: 32px}
 
 /* for research page */
+ul {
+  list-style: none;
+}
 
 ul.publist {
   list-style: none;
@@ -115,10 +118,6 @@ img.portrait {
   .container{
     width: 80%;
     margin: auto;
-  }
-  #external-links{
-    list-style-type: none;
-    color: #FF0000;
   }
   #about-sidebar{
     width: 100%;
