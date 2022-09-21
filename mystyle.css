@@ -1,8 +1,8 @@
 /* structure */
 body {
-  background-color: #F7FFF7;
+  background-color: #FCFCFC;
   margin: 0;
-  color: #50514F;
+  color: #0E2E56;
   font-family: 'Rubik', sans-serif;
 }
 .container{
@@ -15,27 +15,30 @@ body {
   height: 50px;
   margin: 0 auto;
 }
-
+.container2{
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
 
 /* contents */
 h1 {
   font-weight: 700;
   font-size: 72px;
   line-height: 64px;
-  color: #50514F;
-  margin-bottom: 12px;
+  margin-bottom: 40px;
 }
 h2 {
   font-weight: 500;
   font-size: 32px;
   line-height: 32px;
-  color: #50514F;
+  color: #0E2E56;
 }
 h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
-  color: #50514F;
+  color: #0E2E56;
 }
 p {
   max-width: 700px;
@@ -48,16 +51,18 @@ p.bpexp{
   font-size: 14px;
   padding-left:14px;
 }
-a:link {color: #50514F}
-a:hover {color: #59FFA0}
-a:visited {color: #90A0D0}
+a:link {color: #0E2E56}
+a:hover {color: #D691FA}
+a:visited {color: #134C8C}
 a.mainlink {text-decoration: none; line-height: 32px}
-.mainlink:hover {color: #59FFA0; line-height: 32px}
+.mainlink:hover {color: #D691FA; line-height: 32px}
 a.blojlink {text-decoration: none; line-height: 18px}
-.blojlink:hover {color: #59FFA0; line-height: 18px}
-.hiddenlink {color: #FDFFF7; line-height: 32px}
-.hiddenlink:visited {color: #FDFFF7; line-height: 32px}
-.hiddenlink:hover {color: #0DFFF7; line-height: 32px}
+.blojlink:hover {color: #D691FA; line-height: 18px}
+.hiddenlink {color: #0E2E56; line-height: 32px}
+.hiddenlink:visited {color: #0E2E56; line-height: 32px}
+.hiddenlink:hover {color: #0E2E56; line-height: 32px}
+
+/* for research page */
 
 ul.publist {
   list-style: none;
@@ -70,38 +75,31 @@ li.pub{
   margin-bottom: 12px;
   margin-left: 4px;
 }
+li.pubcomm{
+  margin-left: 24px;
+  margin-bottom: 12px;
+  text-align: justify;
+  color: #666ACE
+}
+
+/* for about page */
 
 img.portrait {
   box-sizing:border-box;
-  float: left;
+  float: center;
   margin-right: 16px;
   width: 160px;
 }
 
-/* SNS icons */
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 15px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
+
+#about-sidebar {
+  position: relative;
+  width: 200px;
+  float: left;
+  line-height: 24px;
 }
-.fa:link{ color:white }
-.fa:visited{ color: white }
-.fa:hover {
-    opacity: 0.7;
-    color: white;
-}
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
+#about-main {
+  position: relative;
+  width: 60%;
+  float: left;
 }
