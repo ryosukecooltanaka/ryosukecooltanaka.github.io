@@ -46,7 +46,7 @@ p {
   font-size: 18px;
   line-height: 24px;
   text-align: justify;
-  text-justify: inter-word;
+  text-justify: auto;
 }
 p.bpexp{
   font-size: 14px;
@@ -80,7 +80,7 @@ li.pubcomm{
   margin-left: 24px;
   margin-bottom: 12px;
   text-align: justify;
-  text-justify: inter-word;
+  text-justify: auto;
   color: #666ACE
 }
 
@@ -108,12 +108,14 @@ img.portrait {
 /** For smartphones **/
 @media screen and (max-width: 959px){
   img.portrait{
-    width: 75%;
+    display: block;
+    width: 80%;
     margin-left: 50%;
     margin-right: 50%;
   }
   .container{
-    width: 85%;
+    width: 80%;
+    margin: auto;
   }
   #about-sidebar{
     width: 100%;
