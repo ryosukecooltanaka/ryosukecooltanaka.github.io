@@ -65,9 +65,7 @@ a.blojlink {text-decoration: none; line-height: 18px}
 .hiddenlink:hover {color: #0E2E56; line-height: 32px}
 
 /* for research page */
-ul.external {
-  list-style: none;
-}
+
 
 ul.publist {
   list-style: none;
@@ -76,19 +74,41 @@ ul.publist {
   max-width: 700px;
   box-sizing: border-box;
 }
+
 li.pub{
   margin-bottom: 12px;
   margin-left: 4px;
 }
+li.pub:hover {
+  color: #666ACE;
+}
+li.pub::after{
+  content: ' \25BD';
+}
+ /* for dynamic collapsing */
+li.active {
+  color: #666ACE;
+}
+li.active::after {
+  content: " \25B2";
+}
+
 li.pubcomm{
   margin-left: 24px;
   margin-bottom: 12px;
   text-align: justify;
   text-justify: auto;
-  color: #666ACE
+  color: #666ACE;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 /* for about page */
+
+ul.external {
+  list-style: none;
+}
 
 img.portrait {
   box-sizing:border-box;
@@ -118,6 +138,9 @@ img.portrait {
   }
   .container{
     width: 80%;
+  }
+  .container2{
+    min-height: 90%;
   }
   #about-sidebar{
     width: 100%;
