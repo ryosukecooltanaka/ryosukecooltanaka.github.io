@@ -1,15 +1,27 @@
+/* color scheme */
+:root{
+  --c1: #283136; /* background */
+  --c2: #a4b3ba; /* text */
+  --c3: #bac995; /* link */
+  --c4: #a2c451; /* hover */
+  --c5: #8b8c87; /* visited */
+}
+
 /* structure */
 body {
-  background: #F4F4F4 url("images/brain_pattern.png") fixed no-repeat;
+  background: var(--c1) url("images/brain.png") fixed no-repeat;
   background-position: 80% 80%;
   margin: 0;
-  color: #0E2E56;
+  color: var(--c2);
   font-family: 'Rubik', sans-serif;
 }
 .container{
   width: 80%;
   min-height: 70%;
   margin: 50px auto 50px auto;
+}
+.navigator{
+  width: 100%;
 }
 .footer{
   width: 80%;
@@ -28,18 +40,22 @@ h1 {
   font-size: 72px;
   line-height: 64px;
   margin-bottom: 40px;
+  color: var(--c2);
+  width: 100%;
 }
 h2 {
   font-weight: 500;
   font-size: 32px;
   line-height: 32px;
-  color: #0E2E56;
+  color: var(--c2);
+  width: 100%;
 }
 h3 {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 18px;
-  color: #0E2E56;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--c2);
+  width: 99%;
 }
 p {
   max-width: 700px;
@@ -53,41 +69,39 @@ p.bpexp{
   font-size: 14px;
   padding-left:14px;
 }
-a:link {color: #0E2E56}
-a:hover {color: #D691FA}
-a:visited {color: #134C8C}
+a:link {color: var(--c3)}
+a:hover {color: var(--c4)}
+a:visited {color: var(--c5)}
 a.mainlink {text-decoration: none; line-height: 32px}
-.mainlink:hover {color: #D691FA; line-height: 32px}
+.mainlink:hover {color: var(--c4); line-height: 32px}
 a.blojlink {text-decoration: none; line-height: 18px}
-.blojlink:hover {color: #D691FA; line-height: 18px}
-.hiddenlink {color: #0E2E56; line-height: 32px}
-.hiddenlink:visited {color: #0E2E56; line-height: 32px}
-.hiddenlink:hover {color: #0E2E56; line-height: 32px}
+.blojlink:hover {color: var(--c4); line-height: 18px}
+.hiddenlink {color: var(--c4); line-height: 32px}
+.hiddenlink:visited {color: var(--c4); line-height: 32px}
+.hiddenlink:hover {color: var(--c4); line-height: 32px}
 
 /* for research page */
-
-
 ul.publist {
   list-style: none;
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 0;
   max-width: 700px;
   box-sizing: border-box;
 }
 
 li.pub{
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   margin-left: 4px;
 }
 li.pub:hover {
-  color: #666ACE;
+  color: var(--c4);
 }
 li.pub::after{
   content: ' \25BD';
 }
  /* for dynamic collapsing */
 li.active {
-  color: #666ACE;
+  color: var(--c4);
 }
 li.active::after {
   content: " \25B2";
@@ -95,10 +109,10 @@ li.active::after {
 
 li.pubcomm{
   margin-left: 24px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   text-align: justify;
   text-justify: auto;
-  color: #666ACE;
+  color: var(--c4);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -128,6 +142,26 @@ img.portrait {
   width: 60%;
   float: left;
 }
+.phone-only{
+  display: none;
+}
+
+/* for gallery page */
+.gallery-panel{
+  width: 40%;
+  min-height: 300px;
+  float: left;
+  margin-top: 16px;
+  margin-right: 20px;
+}
+.gallery-item{
+  display: block;
+  margin: 10px auto 0 auto;
+  max-width: 300px;
+}
+.gallery-caption{
+  text-align: center;
+}
 
 /** For smartphones **/
 @media screen and (max-width: 959px){
@@ -149,4 +183,15 @@ img.portrait {
   #about-main {
     width: 100%;
   }
+  li.external-link{
+    display: inline;
+  }
+  .phone-only{
+    display: inline;
+  }
+  .gallery-panel{
+    width: 100%;
+    margin-right: 0;
+  }
+
 }

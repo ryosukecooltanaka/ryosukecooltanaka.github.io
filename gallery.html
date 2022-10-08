@@ -1,0 +1,92 @@
+<html>
+<head>
+  <title>Gallery | Ryosuke Tanaka</title>
+  <!-- main css -->
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <!-- webfonts -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900" rel="stylesheet">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <div class="container">
+    <h1>Gallery</h1>
+    <div class="navigator">
+      <a href="./index.html">Home</a> > Gallery
+    </div>
+    <!-- Columns for showing images -->
+    <div class="gallery-panel">
+      <img src="images/gallery/orb.gif" class="gallery-item">
+      <p class='gallery-caption'>
+        The Orb Illusion. When you fixate on the central cross, the cyan dot
+        (which is isoluminant with the background) appears to be not moving.
+        I won the 3rd place at <a href='http://www.psy.ritsumei.ac.jp/~akitaoka/sakkon/sakkon2016.html'>
+        the annual Illusion Contest in Japan in 2016 </a>
+        with this illusion.
+      </p>
+      </div>
+
+    <div class="gallery-panel">
+      <img src="images/gallery/cyclone.gif" class="gallery-item">
+      <p class='gallery-caption'>
+        The Cyclone Illusion. The dots appear to be moving outwards, even though
+        they are actually moving on a circle.
+        I won the 2nd place at <a href='http://www.psy.ritsumei.ac.jp/~akitaoka/sakkon/sakkon2015.html'>
+        the annual Illusion Contest in Japan in 2015</a>
+        with this illusion.
+      </p>
+    </div>
+
+    <div class="gallery-panel">
+      <img src="images/gallery/fraser.png" class="gallery-item">
+      <p class='gallery-caption'>
+        This classic illusion called "Fraser-Wilcox illusion" first reported in 70's
+        gives the impression of slow rotation, even though it is a stationary image.
+      <a href='https://www.wired.com/story/what-virtual-reality-for-flies-teaches-us-about-human-vision/'>  Our paper in 2020 </a>showed that flies are also vulnerable to this exact same illusion
+        just like us, revealing a surprising similarity between human and fly brains.
+      </p>
+    </div>
+
+    <div class="gallery-panel">
+      <img src="images/gallery/lc11.png" class="gallery-item">
+      <p class='gallery-caption'>
+        The dendrites of <a href="https://www.sciencedirect.com/science/article/pii/S0960982220305844"> LC11 neurons</a>,
+        visualized with five different fluorescent indicators of neural activity
+        and neurotrasmission. These different indicators can elucidate various aspects
+        of signal transmissions in specific types of neurons, helping us understand
+        how the brian perform computation.
+      </p>
+    </div>
+
+    <div class="gallery-panel">
+      <img src="images/gallery/plp.png" class="gallery-item">
+      <p class='gallery-caption'>
+        The fly brain neuron called PLP219 (in green), which we identified to be
+        involved in visually-driven collision avoidance behaviors in <a href='https://www.sciencedirect.com/science/article/abs/pii/S0960982222005929'>this paper</a>.
+        I created a new combinatorial transgenic driver (split Gal4) to label this neuron, with a help
+        of a computational tool <a href='https://neuronbridge.janelia.org/'>NeuronBridge</a>.
+      </p>
+    </div>
+
+    <div class="gallery-panel">
+      <img src="images/gallery/connectome.png" class="gallery-item">
+      <p class='gallery-caption'>
+        A group of neurons belonging to a putative cell type, which I identified
+        from <a href='https://www.janelia.org/project-team/flyem/hemibrain'>a fly brain connectome</a> using a clustering analysis in
+        <a href='https://www.eneuro.org/content/9/2/ENEURO.0053-22.2022'>this paper</a>. You can brouse
+        reconstructed neurons in this dataset yourself on the <a href='https://neuprint.janelia.org/'>neuPrint</a> website.
+      </p>
+    </div>
+
+  </div>
+  <footer class="footer">
+  </footer>
+
+  <!-- Script to aling column heights in the same row -->
+  <script type="text/javascript" src="adjust-column-height.js"></script>
+
+</body>
+</html>
