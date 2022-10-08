@@ -151,13 +151,13 @@ img.portrait {
   width: 40%;
   min-height: 300px;
   float: left;
-  margin-top: 16px;
+  margin-top: 30px;
   margin-right: 20px;
 }
 .gallery-item{
   display: block;
   margin: 10px auto 0 auto;
-  max-width: 300px;
+  max-width: 280px;
 }
 .gallery-caption{
   text-align: center;

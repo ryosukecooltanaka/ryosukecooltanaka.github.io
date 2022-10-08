@@ -8,7 +8,10 @@ function adjustPanelHeight(){
     // go through even numbered columns
     for (ii=1; ii<panel.length; ii+=2){
       // make the height same
-      panel[ii].style.height = panel[ii-1].clientHeight;
+      var leftHeight = panel[ii-1].clientHeight;
+      var rightHeight = panel[ii].clientHeight;
+      panel[ii-1].style.height = Math.max(leftHeight, rightHeight);
+      panel[ii].style.height = Math.max(leftHeight, rightHeight);
     }
   } else { // in the 1 column setting, just make them minimum
     for (ii=0; ii<panel.length; ii++){
