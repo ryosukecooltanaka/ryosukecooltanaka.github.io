@@ -20,6 +20,14 @@ body {
   min-height: 70%;
   margin: 50px auto 50px auto;
 }
+
+/* clear float of child elements so they don't overflow */
+.container:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
 .navigator{
   width: 100%;
 }
@@ -148,11 +156,12 @@ img.portrait {
 
 /* for gallery page */
 .gallery-panel{
-  width: 40%;
-  min-height: 300px;
+  width: 46%;
   float: left;
   margin-top: 30px;
-  margin-right: 20px;
+  margin-right: 30px;
+  display: block;
+  height: auto;
 }
 .gallery-item{
   display: block;
