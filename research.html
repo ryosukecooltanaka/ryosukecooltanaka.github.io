@@ -13,6 +13,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
+  <div id="svg-background"></div>
   <div class="container">
     <h1>Research</h1>
     <div class="navigator">
@@ -62,46 +63,46 @@
       <li class="pub" id="TP25">Tanaka & Portugues (2025)
         Algorithmic dissection of optic flow memory in larval zebrafish. <i>bioRxiv</i>.
       <a href="https://www.biorxiv.org/content/10.1101/2025.04.15.648832v1">[preprint]</a></li>
-    
+
       <li class="pubcomm">
         Larval zebrafish use visual flows that happened many seconds ago in order to stabilize their position
         and heading, which can be seen as a simple form of working memory. Through a series of psychophysics
         experiments, I first found that the fish remember mostly externally generated, but not self-generated
-        visual flows. This suggests that the fish keeps track of involuntary drifts, but not their position 
+        visual flows. This suggests that the fish keeps track of involuntary drifts, but not their position
         in the environment. Second, the fish appeared to become more forgetful when the direction of the visual
         flow changed more frequently. In addition, I performed calcium imaging experiments to look for neural
-        correlates of these key behavioral phenomena. In particular, I found neurons in the inferior olive that 
+        correlates of these key behavioral phenomena. In particular, I found neurons in the inferior olive that
         integrate forward and backward visual flow separately with a long timescale, and built quantitative models
         that connect this physiological observation to the variable timescales of the behavior.
       </li>
-      
+
       <li class="pub" id="TP24">Tanaka & Portugues (2024)
         Mechanisms for plastic landmark anchoring in zebrafish compass neurons. <i>bioRxiv</i>.
       <a href="https://www.biorxiv.org/content/10.1101/2024.12.13.628331v1">[preprint]</a></li>
-    
+
       <li class="pubcomm">
         Brains of diverse animals from humans to insects are equipped with neurons that
         work like a compass, which endows you with the sense of direction.
         The activity of these neurons keeps track of which way the animal is heading
-        by keeping track of the turns they make. 
+        by keeping track of the turns they make.
         <a href='https://www.nature.com/articles/s41593-023-01308-5'>A previous study from the lab</a>
         identified such compass neurons in the larval zebrafish brain, the smallest vertebrate
         specis commonly used in neuroscience. This finding revealed, for the first time in
         vertebrates, how exactly these neurons are wired up to produce the compass-like activity.
-        In contrast, it remained unclear if and how these fish compass neurons take advantage of 
-        various visual cues, which should be also informative about your heading direction. 
-        In this study, I built a <a href="#CC19">panoramic VR setup similar to what I used to 
+        In contrast, it remained unclear if and how these fish compass neurons take advantage of
+        various visual cues, which should be also informative about your heading direction.
+        In this study, I built a <a href="#CC19">panoramic VR setup similar to what I used to
         use for the flies</a>, and found that the fish compass neurons can
-        keep track of the fish's heading relative to the visual scenes, utilizing both 
-        visual landmarks (e.g. the sun) and optic flow. In addition, we show that the 
+        keep track of the fish's heading relative to the visual scenes, utilizing both
+        visual landmarks (e.g. the sun) and optic flow. In addition, we show that the
         inputs from a conserved nucleus called habenula map the landmark
         bearing and the compass direction in an experience dependent fashion.
         This circuit arrangement bears a remarkable similarity to the compass cirucitry
         in <i>Drosophila</i>, making it a beautiful example of evolutionary convergence.
       </li>
-    
+
     </ul>
-    
+
     <h3>Fly works</h3>
     <ul class="publist">
 
@@ -110,17 +111,17 @@
       <a href="https://www.biorxiv.org/content/10.1101/2024.12.25.630346v1">[preprint]</a></li>
 
       <li class="pubcomm">
-        It has been known for two decades that fruit flies can judge distance, 
+        It has been known for two decades that fruit flies can judge distance,
         but it remained unclear how they actually do so, as well as the neural circuitry
-        underlying this ability. This study presents a novel assay to study distance estimation in flies, 
-        which reconciles high-throughput and high-resolution. Through a truely heroic screening 
-        effort enabled by this assay, the authors found that distance estimation in flies require 
+        underlying this ability. This study presents a novel assay to study distance estimation in flies,
+        which reconciles high-throughput and high-resolution. Through a truely heroic screening
+        effort enabled by this assay, the authors found that distance estimation in flies require
         motion-detecting cells T4/T5, as well as a cell type called LC15, which turned out to be sensitive to motion parallax.
-        The topic of this study was one of several "spatial vision" project ideas I had circa 2020, which 
+        The topic of this study was one of several "spatial vision" project ideas I had circa 2020, which
         I pursued only half-heartedly back then. The first authors of the study picked up the project
-        and carried it far beyond my wildest imagination.     
-      </li>      
-      
+        and carried it far beyond my wildest imagination.
+      </li>
+
       <li class="pub" id="TC23">Tanaka, Zhou, Agrochao, Badwan, Au, Matos, & Clark (2023)
         Neural mechanisms to incorporate visual counterevidence in self-movement estimation. <i>Curr. Biol.</i>.
       <a href="https://www.sciencedirect.com/science/article/pii/S0960982223013696">[link]</a>
@@ -301,5 +302,6 @@
 
   <!-- Script to collapse paper comments -->
   <script type="text/javascript" src="collapse-pub-comm-single.js"></script>
+  <script type="text/javascript" src="load-inject-background-svg.js"></script>
 </body>
 </html>
