@@ -1,11 +1,11 @@
 /* color scheme */
+
 :root{
-  --c1: #283136; /* background */
-  --c2: #a4bab3; /* text */
-  --c3: #bac995; /* link */
-  --c4: #a2c451; /* hover */
-  --c5: #8b8c87; /* visited */
-}
+  --c1: #6d6c94; /* background */
+  --c2: #2a292e; /* text */
+  --c3: #f0a3e2; /* link */
+  --c4: #87ffd3; /* hover */
+  --c5: #575348; /* visited */
 
 /* structure */
 body {
