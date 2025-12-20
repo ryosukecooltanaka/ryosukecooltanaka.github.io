@@ -141,7 +141,7 @@ li.pubcomm{
   transition: max-height 0.2s ease-out;
 }
 
-/* for about page */
+/* for bio page */
 
 ul.external {
   list-style: none;
@@ -154,13 +154,13 @@ img.portrait {
 }
 
 
-#about-sidebar {
+#bio-sidebar {
   position: relative;
   width: 200px;
   float: left;
   line-height: 24px;
 }
-#about-main {
+#bio-main {
   position: relative;
   width: 60%;
   float: left;
@@ -200,11 +200,11 @@ img.portrait {
   .container2{
     min-height: 90%;
   }
-  #about-sidebar{
+  #bio-sidebar{
     width: 100%;
     text-align: center;
   }
-  #about-main {
+  #bio-main {
     width: 100%;
   }
   li.external-link{
