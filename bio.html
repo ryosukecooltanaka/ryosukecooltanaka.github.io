@@ -17,33 +17,31 @@
     <h1>Bio</h1>
     <div class="navigator">
       <a href="./index.html">Home</a> > Bio
+      <span id='lang-selector'>
+        <a href="?lang=en" class='switch'>EN</a> / 
+        <a href="?lang=ja" class='switch'>JA</a>
+      </span>
     </div>
     <div class="container2">
     <div id='bio-sidebar'>
       <img src="images/profile.png" alt="Portrait" class='portrait'>
       <ul class='external'>
         <li class='external-link'> <a href="./files/cv.pdf">CV</a><span class='phone-only'> / </span></li>
-        <li class='external-link'> <a href="https://adhoc123.blogspot.com/">Blog (Jp)</a><span class='phone-only'> / </span></li>
+        <li class='external-link'> <a href="https://adhoc123.blogspot.com/">Blog (Ja)</a><span class='phone-only'> / </span></li>
         <li class='external-link'> <a href="https://github.com/ryosukecooltanaka">GitHub</a><span class='phone-only'> / </span></li>
         <li class='external-link'> <a href="https://bsky.app/profile/ryosuketanaka.bsky.social">Bluesky</a><span class='phone-only'> / </span></li>
-        <li class='external-link'> <a href="https://researchmap.jp/ryosuketanaka">researchmap (Jp)</a></li>
+        <li class='external-link'> <a href="https://researchmap.jp/ryosuketanaka">researchmap</a></li>
       </ul>
     </div>
 
     <div id='bio-main'>
-    <p>
-      I'm Ryosuke, a neuroscientist orignially from Japan.
-      Currently, I am working as a postdoctoral researcher (<a href='https://www.hfsp.org/awardees/awards?field_award_type_target_id=92&field_award_year_target_id%5B%5D=399&field_countries_target_id=GERMANY'>HFSP postdoctoral fellow</a>)
-      in <a href='https://portugueslab.com/'>Portugues lab</a> at Technical Univeristy of Munich.
-      Prior to the postdoc, I completed a PhD in Neuroscience at <a href="https://medicine.yale.edu/inp/">Yale University</a>,
-      as well as bachelor's and master's degrees at the University of Tokyo.
-      Please look at the <a href='./research.html'>Research</a> page for more about my research.
-    </p>
+    <p text-key='bio'></p>
     </div>
   </div>
   </div>
   <footer class="footer">
   </footer>
   <script type="text/javascript" src="load-inject-background-svg.js"></script>
+  <script type="text/javascript" src="switch-language.js"></script>
 </body>
 </html>

@@ -103,6 +103,11 @@ a.blojlink {text-decoration: none; line-height: 18px}
 .hiddenlink:visited {color: var(--c4); line-height: 32px}
 .hiddenlink:hover {color: var(--c4); line-height: 32px}
 
+/* language select */
+#lang-selector { float: right }
+.switch:visited {color: var(--c2)}
+.switch:hover {color: var(--c4)}
+
 /* for research page */
 ul.publist {
   list-style: none;
