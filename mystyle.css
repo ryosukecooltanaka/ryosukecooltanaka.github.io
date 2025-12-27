@@ -153,10 +153,9 @@ img.portrait {
   width: 160px;
 }
 
-
 #bio-sidebar {
   position: relative;
-  width: 200px;
+  width: 220px;
   float: left;
   line-height: 24px;
 }
