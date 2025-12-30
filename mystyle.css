@@ -105,6 +105,7 @@ a.blojlink {text-decoration: none; line-height: 18px}
 
 /* language select */
 #lang-selector { float: right }
+.switch:link {color: var(--c2)}
 .switch:visited {color: var(--c2)}
 .switch:hover {color: var(--c4)}
 
