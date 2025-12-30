@@ -20,11 +20,12 @@ function adjustPanelHeight(){
       panel[ii].style.height = 'auto';
     }
   }
+  console.log('adjusted height')
 }
 
 // run this function once when the page is loaded
 // if I just call this function here, correct element height is never
 // assigned to gallery-panel, and thus they become too short somehow
-window.addEventListener("load", adjustPanelHeight);
+window.addEventListener("textFillFinishedEvent", adjustPanelHeight);
 // run this function every time window size is adjusted
 window.addEventListener("resize", adjustPanelHeight);

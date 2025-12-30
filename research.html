@@ -18,41 +18,12 @@
     <h1>Research</h1>
     <div class="navigator">
       <a href="./index.html">Home</a> > Research
+      <span id='lang-selector'>
+        <a href="?lang=en" class='switch'>EN</a> / 
+        <a href="?lang=ja" class='switch'>JA</a>
+      </span>
     </div>
-    <p>
-	  What we typically consider as higher mental functions -- such as working memory,
-	  attention, and decision making -- generally require the brain to retain information
-	  that is not concurrently given to the sensory systems, and to perform computations on it.
-	  This is a highly non-trivial process, especially given that neurons that comprise our 
-	  brain operates at the time scale of milliseconds, much faster than these cognitive processes.
-	  My current research aims to provide circuit-level explanations to longer-timescale 
-	  mental/behavioral processes using the larval zebrafish (<i>Danio rerio</i>) as a model system.
-      The larval zebrafish is the smallest vertebrate model organisms used
-      in neuroscience with the body length of 4 mm and only about 100k neurons
-      in their brain (as compared to 70M in mice and 90B in humans).
-      In addition to their small size, the optical accessibility of their brains, as well
-      as their genetic tractability make the zebrafish larvae amenable to various
-      cutting edge experimental approaches, such as brain-wide calcium imaging,
-      optogenetics, and EM-based circuit reconstructions. 
-    </p>
-    <p>
-      During my PhD, I studied visual feature detection and their behavioral
-      functions in the fruit fly <i>Drosophila</i> at <a href="https://clarklab.yale.edu/">Clark lab @Yale</a>.
-      My aspiration there was to bridge "why" flies need to see certain things,
-      "what" computation their brains perform to see what they need to see,
-      and "how" such computations are actually achieved by circuits of neurons,
-      which together consitute canonical criteria of understanding in neuroscience.
-      You can find my thesis <a href="https://www.proquest.com/openview/1ccadf07d818b36b0ebeec7f55c9fc4c">here</a>
-      to check for yourself if I lived up to this lofty goal.
-    </p>
-    <p>
-      During my undergrad and master's, I studied perception in human subjects
-      at <a href='http://park.itc.u-tokyo.ac.jp/YotsumotoLab/index_en.php'>Yotsumoto lab @UTokyo</a>,
-      where I was initiated into the world of research.
-    </p>
-    <p>
-      You can find my Google Scholar profile <a href="https://scholar.google.com/citations?user=1-OkubgAAAAJ">here</a>.
-    </p>
+    <span text-key='research-intro'> </span>
     <h2>Publications</h2>
     <h3>Fish works</h3>
     <ul class="publist">
@@ -62,42 +33,13 @@
 	  <a href="https://www.cell.com/current-biology/fulltext/S0960-9822(25)01113-3">[link]</a>
       <a href="https://www.biorxiv.org/content/10.1101/2025.04.15.648832v1">[preprint]</a></li>
 
-      <li class="pubcomm">
-        Larval zebrafish use visual flows that happened many seconds ago in order to stabilize their position
-        and heading, which can be seen as a simple form of working memory. Through a series of psychophysics
-        experiments, I first found that the fish remember mostly externally generated, but not self-generated
-        visual flows. This suggests that the fish keeps track of involuntary drifts, but not their position
-        in the environment. Second, the fish appeared to become more forgetful when the direction of the visual
-        flow changed more frequently. In addition, I performed calcium imaging experiments to look for neural
-        correlates of these key behavioral phenomena. In particular, I found neurons in the inferior olive that
-        integrate forward and backward visual flow separately with a long timescale, and built quantitative models
-        that connect this physiological observation to the variable timescales of the behavior.
-      </li>
+      <li class="pubcomm" text-key='paper_TP25'></li>
 
       <li class="pub" id="TP24">Tanaka & Portugues (2024)
         Mechanisms for plastic landmark anchoring in zebrafish compass neurons. <i>bioRxiv</i>.
       <a href="https://www.biorxiv.org/content/10.1101/2024.12.13.628331v1">[preprint]</a></li>
 
-      <li class="pubcomm">
-        Brains of diverse animals from humans to insects are equipped with neurons that
-        work like a compass, which endows you with the sense of direction.
-        The activity of these neurons keeps track of which way the animal is heading
-        by keeping track of the turns they make.
-        <a href='https://www.nature.com/articles/s41593-023-01308-5'>A previous study from the lab</a>
-        identified such compass neurons in the larval zebrafish brain, the smallest vertebrate
-        specis commonly used in neuroscience. This finding revealed, for the first time in
-        vertebrates, how exactly these neurons are wired up to produce the compass-like activity.
-        In contrast, it remained unclear if and how these fish compass neurons take advantage of
-        various visual cues, which should be also informative about your heading direction.
-        In this study, I built a <a href="#CC19">panoramic VR setup similar to what I used to
-        use for the flies</a>, and found that the fish compass neurons can
-        keep track of the fish's heading relative to the visual scenes, utilizing both
-        visual landmarks (e.g. the sun) and optic flow. In addition, we show that the
-        inputs from a conserved nucleus called habenula map the landmark
-        bearing and the compass direction in an experience dependent fashion.
-        This circuit arrangement bears a remarkable similarity to the compass cirucitry
-        in <i>Drosophila</i>, making it a beautiful example of evolutionary convergence.
-      </li>
+      <li class="pubcomm" text-key='paper_TP24'></li>
 
     </ul>
 
@@ -109,124 +51,42 @@
 	  <a href="https://www.cell.com/current-biology/fulltext/S0960-9822(25)01178-9">[link]</a>
       <a href="https://www.biorxiv.org/content/10.1101/2024.12.25.630346v1">[preprint]</a></li>
 
-      <li class="pubcomm">
-        It has been known for two decades that fruit flies can judge distance,
-        but it remained unclear how they actually do so, as well as the neural circuitry
-        underlying this ability. This study presents a novel assay to study distance estimation in flies,
-        which reconciles high-throughput and high-resolution. Through a truely heroic screening
-        effort enabled by this assay, the authors found that distance estimation in flies require
-        motion-detecting cells T4/T5, as well as a cell type called LC15, which turned out to be sensitive to motion parallax.
-        The topic of this study was one of several "spatial vision" project ideas I had circa 2020, which
-        I pursued only half-heartedly back then. The first authors of the study picked up the project
-        and carried it far beyond my wildest imagination.
-      </li>
+      <li class="pubcomm" text-key='paper_SC25'></li>
 
       <li class="pub" id="TC23">Tanaka, Zhou, Agrochao, Badwan, Au, Matos, & Clark (2023)
         Neural mechanisms to incorporate visual counterevidence in self-movement estimation. <i>Curr. Biol.</i>.
       <a href="https://www.cell.com/current-biology/fulltext/S0960-9822(23)01369-6">[link]</a>
       <a href="https://www.biorxiv.org/content/10.1101/2023.01.04.522814v2">[preprint]</a></li>
 
-      <li class="pubcomm">
-        Imagine you are sitting in a train stopped at a station. There is also
-        another train stopped on the opposite track. As the other train slowly
-        starts to move, for a split second, you confuse their movement for your own.
-        As this (hopefully familiar) example illustrates, movements of yourself
-        and other objects can sometimes result in similar visual consequences.
-        So, how can the brain disambiguate these scenarios? This study demonstrated
-        that the fruit flies interpret wide-field visual motion NOT as the consequence
-        of their own movements (or rotation to be preceise), when there is any
-        stationary visual patterns in the view. This makes a logical sense:
-        when an observer rotates, everything in the view must move in synchrony.
-        By contraposition, anything appearing to be not moving suggest that the
-        observer is not rotating. We also explored how detection of stationary
-        patterns is implemented in the visual system of the flies.
-      </li>
+      <li class="pubcomm" text-key='paper_TC23'></li>
 
       <li class="pub" id="MC23">Mano, Choi, Tanaka, Creamer, Matos, Shomar, Badwan, Clandinin, & Clark (2023)
         Long timescale anti-directional rotation in <i>Drosophila</i> optomotor behavior. <i>eLife</i>.
       <a href="https://elifesciences.org/articles/86076">[link]</a></li>
 
-      <li class="pubcomm">
-        When presented with wide-field visual motion rotating about them,
-        animals ranging from flies to humans just cannot help following it with
-        their eyes or with the whole body, a reflex called the optomotor response.
-        This behavior is believed to stabilize the gaze and posture, and its
-        characteristics and mechansims have been under intensive study in various
-        species for almost a century. But sometimes, they do just the opposite!
-        This study identified when and how this paradoxical "anti-optomotor" response
-        happens in the fruit flies. I contributed a part of the calcium imaging data
-        for this study.
-      </li>
+      <li class="pubcomm" text-key='paper_MC23'></li>
 
       <li class="pub" id="TC22a">Tanaka & Clark (2022) Neural mechanisms to exploit positional geometry for collision avoidance. <i>Curr. Biol.</i>
       <a href="https://www.cell.com/current-biology/fulltext/S0960-9822(22)00592-9">[link]</a>
       <a href="https://www.biorxiv.org/content/10.1101/2021.12.11.472218v1">[preprint]</a></li>
 
-      <li class="pubcomm">
-        Imagine you are driving towards an intersection without a traffic signal,
-        and you see another car about to reach the intersection from the side.
-        If you are a safe driver, you would slow and let them pass (I hope you do).
-        Actually, it has been known that flies do exactly the same thing: when they
-        see an object which is about to pass in front of them (which is destined
-        to appear to be moving in the back-to-front direction from their perspective),
-        they slow or stop walking. In this study, we identified a specific neuron
-        type called LPLC1 is necessary and sufficient for this direction-selective
-        slowing behavior. Using techniques such as neurotransmitter imaging and
-        connectomic analyses, we deomsntrated that LPLC1 achieves its selectivity for
-        small objects moving back-to-front by combining outputs of direction-selective
-        and size-selective neurons. We also uncovered a downstream pathway that
-        signals potential collisions to the central brain.
-      </li>
+      <li class="pubcomm" text-key='paper_TC22a'></li>
 
       <li class="pub" id="TC22b">Tanaka & Clark (2022) Identifying inputs to visual projection neurons in <i>Drosophila</i> lobula by analyzing connectomic data. <i>eNeuro</i>.
       <a href="https://www.eneuro.org/content/9/2/ENEURO.0053-22.2022">[link]</a>
       <a href="https://www.biorxiv.org/content/10.1101/2022.02.02.478876v1">[preprint]</a></li>
 
-      <li class="pubcomm">
-        The release of the "hemibrain" connectome by Janelia Reseach Campus in
-        January 2020 was a big game-changer in the field of fly neuroscience.
-        However, unfortunately for vision researchers like myself, the hemibrain
-        connectome did not include early visual neuropils, and thus input neurons
-        to the lobula (which was the only visual neuropil almost fully included
-        in the dataset) were fragmented and unlabeled. This paper summarizes my
-        effort during the COVID lockdown to categorize these neruon fragments
-        into cell types with a hiearchical clustering approach based on connectivity
-        and synapse distributions.
-      </li>
+      <li class="pubcomm" text-key='paper_TC22b'></li>
 
       <li class="pub" id="TC20">Tanaka & Clark (2020) Object-Displacement-Sensitive Visual Neurons Drive Freezing in <i>Drosophila</i>. <i>Curr. Biol.</i>
       <a href="https://www.cell.com/current-biology/fulltext/S0960-9822(20)30584-4">[link]</a></li>
 
-      <li class="pubcomm">
-        The visual system of <i>Drosophila</i> is equipped with a suite of visual
-        projection neurons (VPNs) that are supposedly tuned to behaviorally relevant
-        entities (e. g. conspecifics, predators), whose activity can drive specific
-        behavioral programs. This paper focused on one of these VPNs, called LC11.
-        As of 2016, LC11 was known to have an exquisite tuning to small objects,
-        but their behavioral functions and circuit mechanisms remained unknown.
-        Here, we first showed that LC11 to be necessary for a short-timescale freezing
-        behavior in flies, caused by moving small dots. We then constrained the
-        circuit mechanism by which LC11 detects objects, by combining connectomic
-        analyses as well as neurotransmitter imaging. Based on these data, we
-        built a computational model that captures LC11's visual tuning well.
-      </li>
+      <li class="pubcomm" text-key='paper_TC20'></li>
 
       <li class="pub" id="CC19">Creamer, Mano, Tanaka, & Clark (2019) A flexible geometry for panoramic visual and optogenetic stimulation during behavior and physiology. <i>Journal of Neuroscience Methods</i>.
       <a href="https://www.sciencedirect.com/science/article/pii/S0165027019301451">[link]</a></li>
 
-      <li class="pubcomm">
-        A good visual stimulation setup is a prerequisite for a good study of
-        visual behaviors. The standard solution among the fly researchers
-        has been to either use custom-build LED arrays, or to simply repurpose a PC monitor.
-        This paper proposed a simple, low-cost solution to create a immersive
-        virtual reality by combining a small optical projector with a
-        couple of planar mirrors. The small footprint of this geometry allowed
-        us to highly parallelize behavioral setups, which enabled me to efficiently
-        compare various viusal stimuli as well as flies with various different
-        genotypes. I performed a proof-of-principle experiment to show that one can perform
-        optogenetic stimulations with the light from the projectors simultaneously
-        with visual stimuli on this setup.
-      </li>
+      <li class="pubcomm" text-key='paper_CC19'></li>
 
     </ul>
     <h3>Human works</h3>
@@ -234,24 +94,12 @@
       <li class="pub" id="TY17">Tanaka & Yotsumoto (2017) Passage of Time Judgments Is Relative to Temporal Expectation. <i>Front. Psych.</i>
       <a href="http://journal.frontiersin.org/article/10.3389/fpsyg.2017.00187/full">[link]</a></li>
 
-      <li class="pubcomm">
-        There has been a growing interest among psychologists in the phenomenon
-        of "passage of time judgements (POTJ)", which refers to our sense of how
-        fast or slow time seems to be passing, as often expressed in the statements like
-        "time flies when you are having fun". While some psychologists have drawn a strong
-        distinction between POTJ and memory of duration (alluding to the distinctions
-        between time-consciousness and objective time by phenomenologists), in this paper,
-        I tried to argue that POTJ is basically made based on deviations between remembered
-        and expected durations with several simple experiments.
-      </li>
+      <li class="pubcomm" text-key='paper_YT17'></li>
 
       <li class="pub" id="TY16">Tanaka & Yotsumoto (2016) Networks extending across dorsal and ventral visual pathways correlate with trajectory perception. <i>J. Vis.</i>
       <a href="http://jov.arvojournals.org/article.aspx?articleid=2520069">[link]</a></li>
 
-      <li class="pubcomm">
-        This paper examined neural activities of human subjects while they observed a
-        visual illusion called "wriggling motion trajecotry illusion" with an fMRI.
-      </li>
+      <li class="pubcomm" text-key='paper_TY16'></li>
     </ul>
 
     <h3>Comparative works</h3>
@@ -261,37 +109,14 @@
       <a href="https://www.nature.com/articles/s41583-025-00932-3">[link]</a>
       </li>
 
-      <li class="pubcomm">
-        Vertebrates and insects have evolved their elaborate visual systems mostly independently.
-        Yet, they are constrained by shared molecular machinary, sensory ecology, as well as behavioral needs.
-        In this review, I explored various analogies in anatomy, physiology, and functions of the visual systems
-        between the verterbates and insects, primarilly drawing examples from modern studies on the larval zebrafish
-        and <i>Drosophila</i> utilizing genetic tools. In particular, I argue that the third-order visual structures
-        are specialized in parallel behavioral functions (e.g., stabilization, escape/approach, navigation)
-        in both vertebrates and insects.
-      </li>
+      <li class="pubcomm" text-key='paper_TP25NRN'></li>
 
       <li class="pub" id="ATC20">Agrochao*, Tanaka*, Salazar-Gatzimas & Clark (2020) Mechanism for analogous illusory motion perception in flies and humans. <i>PNAS.</i> (*: equal contributions)
       See also <a href="https://www.wired.com/story/what-virtual-reality-for-flies-teaches-us-about-human-vision/">a WIRED coverage</a> of this paper.
       <a href="https://www.pnas.org/content/early/2020/08/19/2002937117.short">[link]</a>
       </li>
 
-      <li class="pubcomm">
-        Peripheral drift illusions, where repeated patterns of luminance gradients
-        give the illusory sense of movement, is one of the most striking kinds of
-        visual illusions. While many theories have been proposed to explain this illusion,
-        definitive, mechanistic explanations have been lacking.
-        In this study, we found that flies also percieve motion in repeated gradation
-        patterns just like ourseleves, and discovered that the illusion ultimately
-        originates from the imbalanced contributions of bright and dark edges for motion
-        detection. Our results demonstrate that this popular illusion is a manifestation
-        of a strategy to efficiently detect motion by exploiting the asymmetric
-        distribution of light and dark in our visual environment, convergently
-        evolved in vertebrates and insects.
-        For this study, I performed human psychophysics experiments to show that
-        the mechanistic model of the illusion derived from the experiments in flies
-        approximately applies to humans as well, among other things.
-      </li>
+      <li class="pubcomm" text-key='paper_ATC20'></li>
 
     </ul>
 
@@ -302,5 +127,6 @@
   <!-- Script to collapse paper comments -->
   <script type="text/javascript" src="collapse-pub-comm-single.js"></script>
   <script type="text/javascript" src="load-inject-background-svg.js"></script>
+  <script type="text/javascript" src="switch-language.js"></script>
 </body>
 </html>

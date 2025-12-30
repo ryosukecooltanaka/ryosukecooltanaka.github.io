@@ -17,110 +17,61 @@
     <h1>Gallery</h1>
     <div class="navigator">
       <a href="./index.html">Home</a> > Gallery
+      <span id='lang-selector'>
+        <a href="?lang=en" class='switch'>EN</a> / 
+        <a href="?lang=ja" class='switch'>JA</a>
+      </span>
     </div>
     <!-- Columns for showing images -->
 
     <div class="gallery-panel">
       <img src="images/gallery/zebrafish.jpg" class="gallery-item">
-      <p class='gallery-caption'>
-        My latest model organism, larval zebrafish (<i>Danio rerio</i>).
-        Neurons are labeled green with a genetically encoded calcium indicator.
-      </p>
+      <p class='gallery-caption' text-key='gcap_fish'></p>
     </div>
 
     <div class="gallery-panel">
       <img src="images/gallery/staatsoper.jpg" class="gallery-item">
-      <p class='gallery-caption'>
-        Aside from a great research environment and excellent beer, one of the perks
-        Munich has to offer is music, with multiple world-class orchestras and
-        opera houses in the city. Pictured is the Bavarian State Opera decorated
-        for the summer festival 2024.
-      </p>
+      <p class='gallery-caption' text-key='gcap_opera'></p>
     </div>
 
     <div class="gallery-panel">
       <img src="images/gallery/plp.png" class="gallery-item">
-      <p class='gallery-caption'>
-        The fly brain neuron called PLP219 (in green), which we identified to be
-        involved in visually-driven collision avoidance behaviors in <a href='https://www.sciencedirect.com/science/article/abs/pii/S0960982222005929'>this paper</a>.
-        I created a new combinatorial transgenic driver (split Gal4) to label this neuron, with a help
-        of a computational tool <a href='https://neuronbridge.janelia.org/'>NeuronBridge</a>.
-      </p>
+      <p class='gallery-caption' text-key='gcap_plp'></p>
     </div>
 
     <div class="gallery-panel">
       <img src="images/gallery/connectome.png" class="gallery-item">
-      <p class='gallery-caption'>
-        A group of neurons belonging to a putative cell type, which I identified
-        from <a href='https://www.janelia.org/project-team/flyem/hemibrain'>a fly brain connectome</a> using a clustering analysis in
-        <a href='https://www.eneuro.org/content/9/2/ENEURO.0053-22.2022'>this paper</a>. You can brouse
-        reconstructed neurons in this dataset yourself on the <a href='https://neuprint.janelia.org/'>neuPrint</a> website.
-      </p>
+      <p class='gallery-caption' text-key='gcap_eneuro'></p>
     </div>
 
     <div class="gallery-panel">
       <img src="images/gallery/T4T5.gif" class="gallery-item">
-      <p class='gallery-caption'>
-        Much of my PhD works circled arround neurons called T4/T5, which are the first
-        neurons sensitive to directions of motion in the fly brain. The bright yellow
-        blobs are the cell bodies of T4/T5 sitting on the outer surface of a neuropil
-        called lobula plate, and the two curved planes are
-        the deepest layer of medulla and the shallowest layer of lobula, where
-        dendrites of T4 and T5 respectively innervates.
-      </p>
+      <p class='gallery-caption' text-key='gcap_t4t5'></p>
     </div>
 
     <div class="gallery-panel">
       <img src="images/gallery/fraser.png" class="gallery-item">
-      <p class='gallery-caption'>
-        This classic illusion called "Fraser-Wilcox illusion" first reported in 70's
-        gives the impression of slow rotation, even though it is a stationary image.
-      <a href='https://www.wired.com/story/what-virtual-reality-for-flies-teaches-us-about-human-vision/'>  Our paper in 2020 </a>showed that flies are also vulnerable to this exact same illusion
-        just like us, revealing a surprising similarity between human and fly brains.
-      </p>
+      <p class='gallery-caption' text-key='gcap_fwi'></p>
     </div>
 
     <div class="gallery-panel">
       <img src="images/gallery/lc11.png" class="gallery-item">
-      <p class='gallery-caption'>
-        The dendrites of <a href="https://www.sciencedirect.com/science/article/pii/S0960982220305844"> LC11 neurons</a>,
-        visualized with five different fluorescent indicators of neural activity
-        and neurotrasmission. These different indicators can elucidate various aspects
-        of signal transmissions in specific types of neurons, helping us understand
-        how the brain perform computation.
-      </p>
+      <p class='gallery-caption' text-key='gcap_lc11'></p>
     </div>
 
     <div class="gallery-panel">
       <img src="images/gallery/orb.gif" class="gallery-item">
-      <p class='gallery-caption'>
-        The Orb Illusion. When you fixate on the central cross, the cyan dot
-        (which is isoluminant with the background) appears to be not moving.
-        I won the 3rd place at <a href='http://www.psy.ritsumei.ac.jp/~akitaoka/sakkon/sakkon2016.html'>
-        the annual Illusion Contest in Japan in 2016 </a>
-        with this illusion.
-      </p>
-      </div>
+      <p class='gallery-caption' text-key='gcap_orb'></p>
+    </div>
 
     <div class="gallery-panel">
       <img src="images/gallery/cyclone.gif" class="gallery-item">
-      <p class='gallery-caption'>
-        The Cyclone Illusion. The dots appear to be moving outwards, even though
-        they are actually moving on a circle.
-        I won the 2nd place at <a href='http://www.psy.ritsumei.ac.jp/~akitaoka/sakkon/sakkon2015.html'>
-        the annual Illusion Contest in Japan in 2015</a>
-        with this illusion.
-      </p>
+      <p class='gallery-caption' text-key='gcap_cyc'></p>
     </div>
 
     <div class="gallery-panel">
       <img src="images/gallery/mybrain.jpg" class="gallery-item">
-      <p class='gallery-caption'>
-        The left hemisphere of my cerebral cortex, scanned with a 3T MRI scanner
-        at the University of Tokyo, circa 2015. The pial surface was reconstructed and
-        segmented into cortical areas with the FreeSurfer software.
-        Likely it has shrunk a little bit over the years.
-      </p>
+      <p class='gallery-caption' text-key='gcap_brain'></p>
     </div>
 
   </div>
@@ -130,6 +81,8 @@
 
   <!-- Script to aling column heights in the same row -->
   <script type="text/javascript" src="adjust-column-height.js"></script>
-  <script type="text/javascript" src="load-inject-background-svg.js"></script>
+  <script type="text/javascript" src="load-inject-background-svg.js"></script>  
+  <script type="text/javascript" src="switch-language.js"></script>
+
 </body>
 </html>

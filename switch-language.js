@@ -1,6 +1,6 @@
 // Specify accepted languages
 const LANG_SET = new Set(["en", "ja"]);
-
+const event = new Event('textFillFinishedEvent');
 
 // Define on-load callback
 const loadLanguage = () =>{
@@ -33,7 +33,6 @@ const loadLanguage = () =>{
 				element.innerHTML = data[key_name];
 			});
 
-
 		})
 		.catch(error => console.error('Error loading language file:', error));
 
@@ -54,11 +53,14 @@ const loadLanguage = () =>{
 	});
 }
 
-
-
-
-
 // Set the callback
 window.onload = () => {
 	loadLanguage();
+	// for the gallery page, the row height adjustment needs
+	// to happen after text filling (which takes non-zero time!)
+	console.log('will fire the event')
+	setTimeout(() => {
+	  window.dispatchEvent(event);
+	}, 150);
+	
 }
